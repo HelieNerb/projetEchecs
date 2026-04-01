@@ -1,1 +1,1 @@
-from abc import ABC, abstractmethodclass Position :    column = "A"    row = 1        def __init__(self, column, row):        self.column = column        self.row = row
+from abc import ABC, abstractmethodclass Position :     def __init__(self, column, row):        self.column = column        self.row = rowclass Player :    def __init__(self, name, color):        self.name = name        self.color = color            def askMove(self):        move = str(input("Quel déplacement voulez-vous faire?"))        print(move)
